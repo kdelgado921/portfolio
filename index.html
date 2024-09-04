@@ -9,19 +9,111 @@
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;700&family=Lustria&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&family=Roboto+Flex:opsz,wght@8..144,500&display=swap" rel="stylesheet"> 
 
     <link rel="stylesheet" href="style.css"> 
-    <!-- you would also link to Bootstrap here! -->
 
     <title>Keilani Delgado - UX Designer</title>
-    <link rel="icon" type="image/x-icon" href="media/Icon.svg">
+    <link rel="icon" type="image/x-icon" href="Media/Icons/KD.svg">
 </head>
 
 <body>
+    <!-- header -->
+    <header>
+        <div class="container">
+            <!-- navigation -->
+            <nav>
+                <div class="logo">
+                <a href=index.html>KD.</a>
+                </div>
+    
+                <ul>
+                <li><a href="#work">Work</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="Media/resume-kd.pdf" target="_blank">Resume</a></li>
+                </ul>
+          </nav>
+          <!-- end of navigation -->
+
+           <!-- intro -->
+          <div class="intro">
+            <div class="left">
+                <h1>Hi! I'm Keilani.</h1>
+                <h2>A UX Designer.</h2>
+                <p>I am currently studying human computer interaction at the University of California, Irvine.</p>
+                <a class="button" href="#work">Check out my work</a>
+            </div>
+
+            <div class="art">
+                <img src="Media/background.svg" alt=""/>
+            </div>
+          </div>
+          <!-- end of intro -->
+      </header>
+      <!-- end of the header -->
+
+
+      <!-- projects -->
+      <div class="container">
+
+        <!-- divider -->
+         <hr class="flower" id="work">
+
+        <!-- project section -->
+        <section class="project-showcase">
+
+            <!--case study 1-->
+            <div class="case-study">
+                <div class="left">
+                    <a href="case-study-babySteps.html"><img src="Media/BabySteps/babystepsThumbnail.svg" 
+                    alt="3 screens of the BabySteps app, from left to right: how-to nursing videos, 
+                    home screen, and the baby selection screen."></a>
+                </div>
+
+                <div class="right">
+                    <div class="case-study-info">
+                        <h2>BabySteps</h2>
+                        <p>Reducing caregiver stress by improving the newborn health tracking experience.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- case study 2 -->
+             <div class="case-study">
+                <div class="left">
+                    <a href="case-study-babySteps.html"><img class="sleep" src="Media/Sleep Tracker/sleepThumbnail.svg" 
+                        alt="2 screens of the Sleep Tracker app, from left to right: the home screen and 
+                        the history screen."></a>
+                </div>
+                <div class="right">
+                    <div class="case-study-info">
+                        <h2>Sleep Tracker</h2>
+                        <p>Helping users keep track of their sleep and sleepiness throughout the day.</p>
+                    </div>
+                </div>
+             </div>
+        <!-- end of project showcase -->
+        </section>
+      </div>
+      <!-- end of project section -->
+
+      <!-- footer -->
+        <footer>
+            <div class="container">
+                <hr class="flower">
+                <div class="footer-text">
+                    <p>Created by Keilani Delgado, with care. 2024. Work in progress.</p>
+                </div>
+                <div class="social">
+                    <a href="https://github.com/keilanid" target="_blank"><img src="Media/Icons/github.png" alt="github"></a>
+                    <a href="https://www.linkedin.com/in/keilani-d" target="_blank"><img src="Media/Icons/linkedIn.png" alt="linkedIn"></a>
+                </div>
+                <div class="credit">
+                    <p>Social media icons courtesy of Freepik.</p>
+                </div>
+            </div>
+        </footer>
+        <!-- end of footer-->
 
 </body>
-
-
-
 </html>

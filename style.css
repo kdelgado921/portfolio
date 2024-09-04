@@ -1,0 +1,220 @@
+:root {
+    --light-green: #BDDDBC;
+    --med-green: #94CA8D;
+    --dark-green: #8ABD91;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Nunito", sans-serif;
+    font-size: calc(12px + 0.390625vw);
+}
+
+/* Headings */
+h1 {
+    font-family: "Roboto Flex", sans-serif;
+    margin-bottom: 0;
+    font-size: 2.7rem;
+    font-weight: 500;
+}
+
+h2 {
+    font-family: "Roboto Flex", sans-serif;
+    margin-bottom: 0;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+h3 {
+    font-family: "Roboto Flex", sans-serif;
+    margin-bottom: 0;
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.button {
+    padding: 16px 32px;
+    border-radius: 15px;
+    display: inline-block;
+    background-color: var(--dark-green);
+    color: black;
+    text-decoration: none;
+}
+
+
+/* Header and Nav */
+
+header {
+    background-color: var(--light-green);
+    height: 93vh;
+    margin: 2%;
+    border-radius: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 87%;
+    top: 7%;
+    z-index: 100;
+}
+
+nav .logo a{
+    font-family: "Roboto Flex", sans-serif;
+    font-size: 2rem;
+    color: black;
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    list-style: none;
+    margin: 0;
+}
+
+nav ul li a {
+    font-family: "Roboto Flex", sans-serif;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+}
+
+
+/* Intro */
+
+.intro {
+    display: flex;
+    height: 93vh;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.intro .left {
+    width: 35%;
+    margin-left: 4%;
+}
+
+.intro .art {
+    position: absolute;
+    right: 2%;
+    /* bottom: 5vh; */
+    bottom: 2.4%;
+}
+
+.intro .art img {
+    max-height: 500px;
+    width: auto;
+}
+
+
+/* Divider */
+hr {
+    position: relative;
+    border: 0;
+    margin: 2%;
+    display: flex;
+    justify-content: center;
+}
+
+hr:before {
+    content: '';
+    background: linear-gradient(to right, transparent, #818078, transparent);
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 2px;
+}
+
+.flower:after {
+    content: "";
+    position: relative;
+    padding: 0 3.5%;
+    background: #ffffff url('/Media/Icons/flower.svg') no-repeat center center;
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+}
+
+
+/* Projects */
+.project-showcase .case-study {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 5%;
+}
+
+.project-showcase .case-study .left {
+    max-width: 50%;
+}
+
+.project-showcase .case-study .left img {
+    max-width: 100%;
+    height: auto;
+    transition: transform .5s;
+}
+
+.project-showcase .case-study .left img:hover {
+    transform: scale(1.15);
+}
+
+.project-showcase .case-study .left .sleep {
+    max-width: 80%;
+    margin-left: 8%;
+}
+
+.project-showcase .case-study .right {
+    max-width: 25%;
+    margin-left: -5%;
+}
+
+.project-showcase .case-study .right .case-study-info h2 {
+    border-left: solid black;
+    border-width: 3px;
+    padding-left: 5px;
+}
+
+
+/* Footer */
+
+footer .footer-text p {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+footer .social {
+    display: flex;
+    justify-content: center;
+    height: 35px;
+    margin-bottom: 0;
+}
+
+footer .social a img{
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+footer .credit {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 0;
+}
