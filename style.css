@@ -203,6 +203,10 @@ hr:before {
 
 
 /* Projects */
+.project-showcase {
+    max-width: 100%;
+}
+
 .project-showcase .case-study {
     display: flex;
     width: 100%;
@@ -212,7 +216,7 @@ hr:before {
 }
 
 .project-showcase .case-study .left {
-    max-width: 50%;
+    max-width: 45%;
 }
 
 .project-showcase .case-study .left img {
@@ -231,7 +235,7 @@ hr:before {
 }
 
 .project-showcase .case-study .right {
-    max-width: 25%;
+    max-width: 30%;
     margin-left: -5%;
 }
 
