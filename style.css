@@ -141,10 +141,11 @@ nav ul li a {
 }
 
 .intro .art {
-    position: absolute;
-    right: 2%;
-    /* bottom: 5vh; */
-    bottom: 2.4%;
+    margin-right: -5.55%;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: -0.1%;
+    margin-top: auto;
 }
 
 .intro .art img {
@@ -419,3 +420,28 @@ video {
 }
 
 /* END OF ABOUT ME */
+
+/* Media Queries */
+
+@media screen and (orientation: portrait) {
+    body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Index */
+    /* .intro {
+        flex-direction: column;
+        height: 97vh;
+        margin-top: 50%;
+        text-align: left;
+        align-self: center;
+    }
+    
+    .intro .left {
+        width: 80%;
+        margin-bottom: 5%;
+    } */
+
+}
