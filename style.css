@@ -2,6 +2,8 @@
     --light-green: #BDDDBC;
     --med-green: #94CA8D;
     --dark-green: #8ABD91;
+    --light-gray: #F5F5F5;
+    --dark-pink: #D13B74;
 }
 
 *,
@@ -16,7 +18,7 @@ body {
     font-size: calc(12px + 0.390625vw);
 }
 
-/* Headings */
+/* Headings & Other Text */
 h1 {
     font-family: "Roboto Flex", sans-serif;
     margin-bottom: 0;
@@ -38,6 +40,15 @@ h3 {
     font-weight: 500;
 }
 
+.problem-statement {
+    margin-left: 5%;
+    font-size: 1.3rem;
+    color: var(--dark-pink);
+}
+
+#video-info {
+    font-size:0;
+}
 
 .container {
     max-width: 90%;
@@ -57,10 +68,17 @@ h3 {
 /* Header and Nav */
 
 header {
-    background-color: var(--light-green);
     height: 93vh;
     margin: 2%;
     border-radius: 20px;
+}
+
+ .home {
+    background-color: var(--light-green);
+}
+
+.case-study-background {
+    background-color: var(--light-gray);
 }
 
 nav {
@@ -152,6 +170,16 @@ hr:before {
     height: 40px;
 }
 
+.baby:after {
+    content: "";
+    position: relative;
+    padding: 0 3.5%;
+    background: #ffffff url('/Media/Icons/baby.svg') no-repeat center center;
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+}
+
 
 /* Projects */
 .project-showcase .case-study {
@@ -192,12 +220,17 @@ hr:before {
     padding-left: 5px;
 }
 
+.project-showcase .case-study .right .case-study-info p {
+    margin-left: 3%;
+}
+
 
 /* Footer */
 
 footer .footer-text p {
     text-align: center;
     margin-bottom: 0;
+    margin-top: -1%;
 }
 
 footer .social {
@@ -218,3 +251,89 @@ footer .credit {
     font-size: 14px;
     margin-top: 0;
 }
+
+/* END OF INDEX */
+
+/* Case Study Intro */
+.case-study-intro {
+    height: 93vh;
+    width: 100%;
+    align-items: center; 
+    display: flex;
+    flex-direction: column;
+}
+
+.case-study-intro h1 {
+    margin-top: 10%;
+}
+
+.case-study-intro .phone-thumbnail img{
+    display: block;
+    margin: auto;
+    margin-top: -2%;
+    max-width: 50%;
+    height: auto;
+}
+
+/* Project Information */
+.project-information {
+    display: flex;
+    margin: 0 auto;
+    padding: 2%;
+    width: 85%;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.project-information .column {
+    height: min-content;
+}
+
+.project-information .column .title {
+    font-family: "Roboto Flex", sans-serif;
+    font-weight: 500;
+    font-size: 1.3rem;
+    margin: 0;
+    margin-bottom: 4%;
+}
+
+.project-information .column p {
+    margin: 0;
+}
+
+/* Case Study Sections */
+
+section {
+    max-width: 65%;
+    margin: 0 auto;
+}
+
+.image-text:before {
+    content: url(Media/BabySteps/babyStep.svg);
+    /* position: absolute;
+    left: 13%; */
+    margin-left: -5.5%;
+}
+
+.body-text {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+section img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section .large {
+    max-width: 85%;
+}
+
+video {
+    display: block;
+    max-width: 35%;
+    height: auto;
+    margin: 0 auto;
+}
+
