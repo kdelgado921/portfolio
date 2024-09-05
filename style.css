@@ -90,6 +90,16 @@ nav {
     width: 87%;
     top: 7%;
     z-index: 100;
+    transition: all 500ms ease;
+}
+
+nav.scrolled {
+    background: transparent;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 16px 14px -8px rgba(0, 0, 0, 0.03);
+    border-radius: 0 0 8px 8px;
+    top: 0;
+    padding: 1%;
 }
 
 nav .logo a{
