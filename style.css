@@ -15,7 +15,9 @@
 body {
     margin: 0;
     font-family: "Nunito", sans-serif;
-    font-size: calc(12px + 0.390625vw);
+    font-size: 1.2em;
+    font-weight: 500;
+    /* font-size: calc(14px + 0.390625vw); */
 }
 
 /* Headings & Other Text */
@@ -51,13 +53,14 @@ h4 {
     font-size:0;
 }
 
+/* Misc  */
 .container {
     max-width: 90%;
     margin: 0 auto;
 }
 
 .button {
-    padding: 16px 32px;
+    padding: 3% 4%;
     border-radius: 15px;
     display: inline-block;
     background-color: var(--dark-green);
@@ -136,6 +139,7 @@ nav ul li a {
 }
 
 .intro .left {
+    min-width: 36%;
     width: 35%;
     margin-left: 4%;
 }
@@ -430,18 +434,18 @@ video {
         flex-direction: column;
     }
 
-    /* Index */
-    /* .intro {
+    /* Projects */
+
+    .case-study {
         flex-direction: column;
-        height: 97vh;
-        margin-top: 50%;
-        text-align: left;
-        align-self: center;
     }
-    
-    .intro .left {
-        width: 80%;
-        margin-bottom: 5%;
-    } */
+
+    .project-showcase .case-study .left {
+        max-width: 70%;
+    }
+
+    .project-showcase .case-study .right {
+        max-width: 40%;
+    }
 
 }
