@@ -284,31 +284,35 @@ footer .credit {
 
 /* END OF INDEX */
 
+
 /* Case Study Intro */
 .case-study-intro {
-    height: 93vh;
-    width: 100%;
-    align-items: center; 
-    display: flex;
-    flex-direction: column;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    text-align: center;
 }
 
 .case-study-intro h1 {
-    margin-top: 10%;
+    margin-top: 15%;
 }
 
 .case-study-intro .babysteps-thumbnail img{
     display: block;
     margin: auto;
-    margin-top: -2%;
-    max-width: 50%;
+    margin-top: -4%;
+    max-width: 95%;
     height: auto;
 }
 
 .case-study-intro .sleeptracker-thumbnail img{
     display: block;
     margin: auto;
-    max-width: 60%;
+    margin-top: 4%;
+    max-width: 80%;
     height: auto;
 }
 
@@ -447,5 +451,55 @@ video {
     .project-showcase .case-study .right {
         max-width: 40%;
     }
+
+
+    /* Case Study */
+    .case-study-intro {
+        width:90%;
+    }
+
+    /* Project Information */
+    .project-information {
+        width: 100%;
+    }
+    
+    .project-information .column .title {
+        font-size: 1.2rem;
+    }
+    
+    .project-information .column p {
+        font-size:1rem;
+    }
+
+    /* Case Study Sections */
+    section {
+        max-width: 75%;
+        margin: 0 auto;
+    }
+
+    .image-text-baby:before {
+        margin-left: -8.5%;
+    }
+
+    .image-text-moon:before {
+        margin-left: -8%;
+    }
+
+    .goal {
+        max-width: 70%;
+        height: auto;
+        margin-left: 13%;
+    }
+    
+    .data-box {
+        max-width: 100%;
+    }
+    
+    .large {
+        max-width: 93%;
+    }
+    
+
+
 
 }
