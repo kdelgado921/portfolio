@@ -28,7 +28,7 @@
                 </div>
         
                 <ul>
-                <li><a href="#work">Work</a></li>
+                <li><a href="index.html#work">Work</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="Media/resume-kd.pdf" target="_blank">Resume</a></li>
                 </ul>
@@ -39,7 +39,7 @@
             <div class="case-study-intro">
                 <h1>Sleep Tracker</h1>
                 <p>Helping users keep track of their sleep and sleepiness throughout the day.</p>
-                <div class="phone-thumbnail">
+                <div class="sleeptracker-thumbnail">
                     <img src="Media/Sleep Tracker/sleepThumbnail.svg" 
                         alt="3 screens of the BabySteps app, from left to right: how-to nursing videos, 
                         home screen, and the baby selection screen.">
@@ -51,7 +51,7 @@
 
     <!-- project information -->
     <div class="container">
-        <hr class="baby">
+        <hr class="moon">
 
         <div class="project-information">
             <div class="column">
@@ -89,16 +89,178 @@
                 <p>Figma<br>Angular<br>Ionic</p>
             </div>
         </div>
-        <hr class="baby">
+        <hr class="moon">
     </div>
     <!-- end of project information -->
 
-    <!-- project goals -->
-    <!-- End of project goals -->
+    <!-- key project information -->
+    <section>
+        <img class="large data-box" src="Media/Sleep Tracker/importantInfo.svg"
+        alt="Project goals are to log sleep and sleepiness, as well as store and view data. Key constraints 
+        are making a mobile application, utilizing the standford sleepiness scale, and assuming the user 
+        only logs sleep once, while logging sleepiness whenever they want.">
+    </section>
+     <!-- end of key project information -->
 
-    <!-- project constraints and assumptions -->
-    <!-- end of project constraints and assumptions -->
+    <!-- getting to work section-->
+    <section>
+        <h2 class="image-text-moon">Getting To Work</h2>
 
-    <!-- getting to work -->
+        <!-- logging sleep -->
+        <h3>Logging Sleep</h3>
+        <div class="body-text">
+            <p>Keeping in mind that we needed to keep track of different dates and times on the backend, 
+                I wanted to limit the chance of user error as much as possible. Instead of requiring the 
+                user to input their own text—which can lead to typos or differences in format— we used date 
+                and time pickers, ensuring a proper format.</p>
+
+            <img src="Media/Sleep Tracker/dateTime.gif"
+            alt="Animation showing the use of date time buttons to select when a user woke up and went to sleep.">
+
+            <p>This not only helps the user understand what is being asked of them, but helps the organization of 
+                data on the backend.</p>
+        </div>
+        <!-- end of logging sleep -->
+
+        <!-- logging sleepiness -->
+        <h3>Logging Sleepiness</h3>
+        <div class="body-text">
+            <p>I wanted to ensure that users could see at a glance what they were rating, so I created two 
+                different icons: one that represented feeling awake and another to represent feeling sleepy. 
+                I then utilized a range slider so users could easily pick how they were feeling.</p>
+
+            <img src="Media/Sleep Tracker/sliderRange.gif"
+            alt="Animation showing the use of a slider tool, ranging from awake to super sleepy.">
+
+            <p>My partner and I felt this was the best way forward as it gave them a visual of their feeling, 
+                rather than just providing them a numbered scale from 1 to 7.</p>
+        </div>
+        <!-- end of logging sleepiness -->
+
+        <!-- viewing the data -->
+        <h3>Viewing the Data</h3>
+        <!-- viewing sleep -->
+        <h4>Viewing Sleep</h4>
+        <div class="body-text">
+            <img class="goal" src="Media/Sleep Tracker/sleepGoal.svg"
+            alt="The main goal here is to make viewing sleep user friendly and intuitive.">
+
+            <p>I wanted this app to be as user friendly and intuitive as possible. To do this, I decided 
+                that we should have a useful initial view. This would allow users to log and view their 
+                sleep straight from the home screen. Thus, immediately after logging their sleep, they are 
+                able to see it.</p>
+            
+            <img src="Media/Sleep Tracker/saveSleep.gif">
+        </div>
+        <!-- end of viewing sleep -->
+
+        <!-- viewing sleepiness -->
+        <h4>Viewing Sleepiness</h4>
+        <div class="body-text">
+            <img class="goal" src="Media/Sleep Tracker/sleepinessGoal.svg"
+            alt="The main goal here is to minimize the clutter of viewing sleepiness.">
+
+            <p>I did not want to overwhelm the user with information every time they try to view 
+                their sleep and sleepiness history. So as to not bombard the user with a lot of 
+                information, users are given a quick overview. There they can see their time slept 
+                and their average logged sleepiness for that day.</p>
+            
+            <img src="Media/Sleep Tracker/sleepHistory.gif"
+            alt="Animation showing a user logging their sleepiness level, navigating to the sleep history 
+            tab, and picking a certain date to view the data for.">
+
+            <p>If they want more information, they are able to click on the card to view each recorded 
+                log of their sleep and sleepiness.</p>
+        </div>
+        <!-- end of viewing sleepiness -->
+    </section>
+    <!-- end of the getting to work section -->
+
+    <!-- challenges and adapting -->
+    <section>
+        <h2 class="image-text-moon">Challenges & Adapting</h2>
+        <div class="body-text">
+            <p>Initially, I had many big ideas, which I had created lo-fi and hi-fi mockups for.</p>
+
+            <img class="large" src="Media/Sleep Tracker/Initial.png"
+            alt="High fidelity mockups of initial screen designs: including splash page, log-in, 
+            landing page, statistics, and history.">
+
+            <p>But as we moved forward in the project, my partner and I realized that we would not 
+                have time to implement everything. So, we had to scrap a few ideas and stick to the 
+                essence of the project: logging and viewing sleep and sleepiness data.</p>
+
+            <img class="extra-large" src="Media/Sleep Tracker/Used.png"
+            alt="High fidelity mockups of the home and sleep history page.">
+
+            <p>We ended up relying on these 4 screens to guide the code for our project.</p>
+
+            <p>We also had to remove the editing option for sleep and sleepiness data. Instead, 
+                we pivoted to focusing on error prevention by including a pop-up modal where the 
+                user could ensure they wanted to follow through with their action.</p>
+
+            <img src="Media/Sleep Tracker/errorPrevention.gif"
+            alt="Animation showing a pop up modal that comes up whenever the user 
+            tries to save sleep or sleepiness.">
+        </div>
+    </section>
+    <!-- end of vhallenges and adapting -->
+
+    <!-- next steps -->
+    <section>
+        <h2 class="image-text-moon">Next Steps</h2>
+        <div class="body-text">
+            <p>If I continued this project, I would love to include more features that could improve 
+                its user experience.</p>
+            
+            <p>Specifically, I would like to:</p>
+
+            <ol>
+                <li>Revisit my initial designs</li>
+                <li>Test prototypes with prospective users (not just friends and family)</li>
+                <li>Allow the user to edit their sleep & sleepiness data</li>
+                <li>Add profile features</li>
+                <li>Allow users to mark their sleep goals so they can know how often they’ve met their goals</li>
+            </ol>
+        </div>
+    </section>
+    <!-- end of next steps -->
+
+    <!-- reflection & takeaways -->
+     <section>
+        <h2 class="image-text-moon">Reflection & Takeaways</h2>
+        <div class="body-text">
+            <p>This project reminded me that it is important to stay focused on the essence of a project, 
+                especially when given a short timeline. In this case specifically we had to focus on the minimum 
+                viable product.</p>
+
+            <p>There is a balance that needs to be maintained, where the key essence of the product is 
+                delivered while also ensuring that it stands out amongst competitors and is intuitive and 
+                enjoyable to use.</p>
+
+            <p>Overall, it is important to stay creative, yet pragmatic about what is accomplishable 
+                within a certain timeframe.</p>
+        </div>
+     </section>
+     <!-- end of reflection & takeaways -->
+
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <hr class="flower">
+            <div class="footer-text">
+                <p>Created by Keilani Delgado, with care. 2024. Work in progress.</p>
+            </div>
+            <div class="social">
+                <a href="https://github.com/keilanid" target="_blank"><img src="Media/Icons/github.png" alt="github"></a>
+                <a href="https://www.linkedin.com/in/keilani-d" target="_blank"><img src="Media/Icons/linkedIn.png" alt="linkedIn"></a>
+            </div>
+            <div class="credit">
+                <p>Social media icons courtesy of Freepik.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- end of footer-->
+
 </body>
 </html>
