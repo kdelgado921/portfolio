@@ -375,6 +375,11 @@ section {
     padding-right: 1%;
 }
 
+.image-text-sprout:before {
+    content: url(Media/Icons/sprout.svg);
+    margin-left: -5.2%;
+}
+
 .body-text {
     max-width: 90%;
     margin: 0 auto;
